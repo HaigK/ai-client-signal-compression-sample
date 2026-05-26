@@ -1,0 +1,86 @@
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+
+data = {
+    "work_sample_name": "AI Client Signal Compression Sample",
+    "source": {
+        "type": "sanitized_chat_summary",
+        "description": "Structured JSON created from a planning chat about building a GitHub work sample for a Gartner Data Scientist application.",
+        "created_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    },
+    "job_target": {
+        "company": "Gartner",
+        "role": "Data Scientist",
+        "job_url": "https://jobs.gartner.com/jobs/job/106172-data-scientist/",
+        "work_sample_goal": "Show ability to convert messy unstructured text into structured business signals using Python, JSON, and Markdown."
+    },
+    "candidate_positioning": {
+        "core_resume_line": "500+ hours building Python, JSON, and Markdown tooling for AI workflows, context engineering, role-based knowledge management, and workflow compression.",
+        "relevant_skills": [
+            "Python",
+            "JSON",
+            "Markdown",
+            "context engineering",
+            "knowledge management",
+            "workflow compression",
+            "structured output design",
+            "unstructured text processing",
+            "business signal extraction"
+        ]
+    },
+    "project_plan": {
+        "github_repository": "ai-client-signal-compression-sample",
+        "recommended_files": [
+            "README.md",
+            "requirements.txt",
+            "src/process_transcripts.py",
+            "sample_data/client_call_01.txt",
+            "sample_data/email_thread_01.txt",
+            "sample_data/support_notes_01.txt",
+            "output_examples/client_signal_summary.json"
+        ],
+        "business_problem": "Important client signals are often buried inside long calls, emails, and support notes.",
+        "solution_summary": "Read messy text files, extract pain points and risk signals, score interest and churn risk, then export structured JSON."
+    },
+    "example_extracted_signals": {
+        "client_pain_points": [
+            "manual reporting",
+            "slow access to operational data",
+            "unclear AI governance",
+            "difficulty converting long notes into action items"
+        ],
+        "risk_signals": [
+            "budget concern",
+            "unclear project owner",
+            "delayed rollout risk"
+        ],
+        "interest_areas": [
+            "generative AI",
+            "workflow automation",
+            "dashboard reporting",
+            "knowledge management",
+            "AI governance"
+        ],
+        "recommended_next_action": "Send an AI governance and workflow automation overview, then schedule a technical discovery call.",
+        "churn_risk": "medium",
+        "interest_score": 78
+    },
+    "why_this_sample_fits_the_role": [
+        "Demonstrates unstructured text processing.",
+        "Demonstrates context compression into structured JSON.",
+        "Demonstrates business-facing signal extraction.",
+        "Connects AI workflow design to measurable decision support.",
+        "Avoids exposing private manuscript or company data."
+    ],
+    "next_steps": [
+        "Commit this JSON file to output_examples/client_signal_summary.json.",
+        "Create fake sample text files under sample_data.",
+        "Create a Python script that reads sample_data and produces this JSON shape.",
+        "Update README.md with business problem, how to run, and example output."
+    ]
+}
+
+out = Path("/mnt/data/client_signal_summary_from_chat.json")
+out.write_text(json.dumps(data, indent=2), encoding="utf-8")
+print(f"Created {out}")
