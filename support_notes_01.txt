@@ -1,0 +1,37 @@
+Support notes - GitHub setup and repository confusion
+
+The user created a GitHub repository for the work sample and became confused by the default .gitignore file. The .gitignore was created because the Python template was selected. It tells GitHub not to upload Python cache files, build artifacts, and temporary files.
+
+The next confusion was where to place the Custom GPT playbook file. The file is Markdown and contains backend and frontend operating rules for an adaptive reasoning assistant. It is not Python source code. It belongs in prompt_specs, not src.
+
+Repository structure recommended:
+README.md
+requirements.txt
+src/process_transcripts.py
+sample_data/client_call_01.txt
+sample_data/email_thread_01.txt
+sample_data/support_notes_01.txt
+output_examples/client_signal_summary.json
+prompt_specs/operational_reasoning_playbook.md
+
+Pain points discussed:
+- The user was unsure what .gitignore does.
+- The user was unsure whether the Custom GPT Markdown playbook was src/process_transcripts.py.
+- The user needed a simple file-by-file path.
+- The user needed a Python script that reads sample_data and writes JSON output.
+
+Interest areas:
+- Python scripting
+- Markdown documentation
+- JSON output
+- Context engineering
+- GitHub work sample organization
+- Workflow automation
+
+Risk signals:
+- Adoption risk: folder structure confusion could block progress.
+- Documentation risk: a hiring manager may not understand the sample unless README.md explains it clearly.
+- Rollout risk: the repo should start small and not become a giant project.
+
+Recommended next action:
+Commit these sample_data files first, then add src/process_transcripts.py, then run the script to generate output_examples/client_signal_summary.json.

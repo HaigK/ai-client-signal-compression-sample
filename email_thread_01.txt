@@ -1,0 +1,29 @@
+Email thread notes - job application and military talent outreach
+
+The candidate applied to multiple technical roles and needed a simple email for a military talent team. The request required tight formatting: job title, job req, tailored resume, and 2-3 highlights.
+
+The candidate wanted the strongest honest positioning for AI workflow experience. The final positioning used this line:
+500+ hours building Python, JSON, and Markdown tooling for AI workflows, context engineering, role-based knowledge management, and workflow compression.
+
+Pain points discussed:
+- Limited resume space.
+- Need to avoid overstating JavaScript or YAML experience.
+- Need to separate total book-writing hours from job-relevant AI workflow hours.
+- Need to describe persona work in business systems language.
+
+Interest areas:
+- AI workflows
+- Prompt engineering
+- Markdown prompt specs
+- JSON export structure
+- Python transcript tooling
+- Resume targeting
+- Workflow compression
+
+Risk signals:
+- Terminology risk: calling Markdown prompt specs JavaScript could confuse an interviewer.
+- Positioning risk: saying 1,500+ hours may sound like writing time instead of job-relevant systems work.
+- Documentation risk: the work sample needs clear boundaries between code, prompt specs, and output examples.
+
+Recommended next action:
+Use 500+ hours as the job-relevant number. Explain 1,500+ hours only if asked as total creative project time.

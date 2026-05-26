@@ -1,0 +1,27 @@
+Client call notes - Gartner work sample planning
+
+The candidate is applying for a Gartner Data Scientist role and wants a public GitHub work sample. The main business problem is that long unstructured chats contain useful project decisions, but those decisions are hard to reuse later.
+
+The workflow should convert messy notes into structured business signals. The candidate has 500+ hours building Python, JSON, and Markdown tooling for AI workflows, context engineering, role-based knowledge management, and workflow compression.
+
+Pain points discussed:
+- Manual reporting from long chats takes too much time.
+- Important decisions are buried inside unstructured conversation.
+- It is unclear how to show AI workflow experience without exposing private manuscript data.
+- The project needs clean documentation, reusable output, and a simple Python script.
+
+Interest areas:
+- Generative AI
+- Workflow automation
+- Knowledge management
+- Client signal extraction
+- JSON output design
+
+Risk signals:
+- Budget concern is not the main issue.
+- The bigger risk is unclear project owner and unclear resume positioning.
+- User adoption risk exists because recruiters may not understand a creative manuscript example.
+- The sample should avoid private company data and private book text.
+
+Recommended next action:
+Build a small public GitHub repository that uses fake client notes, extracts structured signals, and exports a JSON summary.
